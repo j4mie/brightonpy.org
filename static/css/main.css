@@ -10,7 +10,7 @@ div#wrapper {
     background-color: white;
     width: 700px;
     margin: 30px auto 10px auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     overflow: auto;
     min-height: 400px;
     -webkit-border-radius: 20px;
@@ -28,9 +28,17 @@ div#header img {
     margin: 10px;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: bold;
     text-shadow: 0 1px 1px #CCC;
+}
+
+h2, h3, h4 {
+    border-bottom: 1px solid #DDD;
+}
+
+h4 {
+    margin-bottom: 0.25em;
 }
 
 ul {
@@ -100,4 +108,8 @@ div.vevent p.summary {
 div.vevent p.summary {
     font-size: 120%;
     font-weight: bold;
+}
+
+div.meeting h2 {
+    margin-bottom: 0;
 }
