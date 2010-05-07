@@ -19,6 +19,7 @@ def get_page(directory, file):
     path = "%s/%s" % (directory, str(file))
     try:
         file_contents = open("%s/%s" % (directory, file)).read()
+        file_contents = unicode(file_contents, 'utf-8')
     except:
         return None
     data, text = file_contents.split('---\n', 1)
