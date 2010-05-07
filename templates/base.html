@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>Brighton and Hove Python User Group : {% block title %}{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/typography.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Brighton Python User Group" />
+            <h1>Brighton and Hove <br /> Python User Group</h1>
+        </div>
+        
+        <div id="menu">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Home</a></li>
+                <li><a href="{{ url_for('page', path='location') }}">Location</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    <div id="footer">
+        <p>Site powered by <a href="http://flask.pocoo.org">Flask</a>. Source code on <a href="http://github.com/j4mie/brightonpy.org">GitHub</a>.</p>
+    </div>
+</body>
+</html>
