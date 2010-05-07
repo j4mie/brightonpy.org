@@ -3,11 +3,7 @@ import datetime
 import os
 import yaml
 import markdown
-
-# Configuration
-DEBUG = True
-MEETINGS_DIR = 'meetings'
-PAGES_DIR = 'pages'
+import settings
 
 app = Flask(__name__)
 
@@ -31,14 +27,14 @@ def get_page(directory, file):
 
 def get_meeting(path):
     """Get a meeting from the filesystem"""
-    meeting = get_page(MEETINGS_DIR, path)
+    meeting = get_page(settings.MEETINGS_DIR, path)
     if meeting is not None:
         meeting['date'] = datetime.datetime.strptime(path, '%Y-%m-%d')
     return meeting
 
 def get_meetings():
     """Return a list of all meetings"""
-    files = os.listdir(MEETINGS_DIR)
+    files = os.listdir(settings.MEETINGS_DIR)
     return filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
 
 @app.route('/')
@@ -57,7 +53,7 @@ def meeting(date):
 
 @app.route('/pages/<path>')
 def page(path):
-    page = get_page(PAGES_DIR, path)
+    page = get_page(settings.PAGES_DIR, path)
     if page is None:
         abort(404)
     return render_template('page.html', page=page)
@@ -70,4 +66,4 @@ def page_not_found(error):
 app.jinja_env.filters['datetimeformat'] = format_datetime
 
 if __name__ == '__main__':
-    app.run(debug=DEBUG)
+    app.run(debug=settings.DEBUG)
