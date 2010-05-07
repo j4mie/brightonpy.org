@@ -16,6 +16,7 @@ def format_datetime(dt, format):
     return dt.strftime(format)
 
 def get_page(directory, file):
+    """Load and parse a page from the filesystem. Returns the page, or None if not found"""
     path = "%s/%s" % (directory, str(file))
     try:
         file_contents = open("%s/%s" % (directory, file)).read()
@@ -30,12 +31,14 @@ def get_page(directory, file):
     
 
 def get_meeting(path):
+    """Get a meeting from the filesystem"""
     meeting = get_page(MEETINGS_DIR, path)
     if meeting is not None:
         meeting['date'] = datetime.datetime.strptime(path, '%Y-%m-%d')
     return meeting
 
 def get_meetings():
+    """Return a list of all meetings"""
     files = os.listdir(MEETINGS_DIR)
     return filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
 
