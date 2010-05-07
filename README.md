@@ -10,7 +10,7 @@ How to install and run locally
 
 (Assumes you have Pip, virtualenv and virtualenvwrapper installed).
 
-    git clone git@github.com:j4mie/brightonpy.org.git
+    git clone http://github.com/j4mie/brightonpy.org.git
     cd brightonpy.org
     mkvirtualenv brightonpy
     pip install -E brightonpy -r requirements.txt
