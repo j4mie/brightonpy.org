@@ -13,7 +13,7 @@ def format_datetime(dt, format):
 
 def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
-    path = os.path.abspath(os.path.join(directory, str(file)))
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, str(file)))
     try:
         file_contents = open("%s/%s" % (directory, file)).read()
         file_contents = unicode(file_contents, 'utf-8')
@@ -34,7 +34,7 @@ def get_meeting(path):
 
 def get_meetings():
     """Return a list of all meetings"""
-    files = os.listdir(os.path.abspath(settings.MEETINGS_DIR))
+    files = os.listdir(os.path.abspath(os.path.join(os.path.dirname(__file__), settings.MEETINGS_DIR)))
     return filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
 
 @app.route('/')
