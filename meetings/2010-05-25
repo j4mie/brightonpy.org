@@ -3,7 +3,28 @@ title: Scientific Computing with Python
 venue: The Skiff
 ---
 
-This is a test file
--------------------
+This meeting will consist of two talks, followed by discussion and beers!
 
-Here we go! Some stuff!
+### Ian Ozsvald: Introduction to PyCUDA ###
+
+*"Using the 'mini-Cray supercomputer' that is your graphics card to do super-fast math in a few lines of Python"*
+
+#### About PyCUDA ####
+
+[PyCUDA](http://mathema.tician.de/software/pycuda) gives you easy, Pythonic access to Nvidia‘s CUDA parallel computation API.
+
+#### About Ian Oszvald ####
+
+[Ian Ozsvald](http://twitter.com/ianoszvald) is an Artificial Intelligence researcher in industry, screencaster and author of The Screencasting Handbook, entrepreneurial geek, £5 App founder, ShowMeDoer.
+
+### John Montgomery: Tackling The Travelling Salesman Problem ###
+
+*"Using Python to explore different stochastic algorithms"*
+
+#### About the Travelling Saleman Problem ####
+
+The [Travelling Salesman Problem (TSP)](http://en.wikipedia.org/wiki/Travelling_salesman_problem) is a problem in combinatorial optimization studied in operations research and theoretical computer science. Given a list of cities and their pairwise distances, the task is to find a shortest possible tour that visits each city exactly once.
+
+#### About John Montgomery ####
+
+[John Montgomery](http://twitter.com/lilspikey) is a software developer living in Brighton with experience in POP-11 (an AI teaching language), Prolog, Java, Javascript, Perl, C++, Visual Basic and Python. He is also a £5 App founder.
