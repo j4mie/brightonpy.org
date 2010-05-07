@@ -34,7 +34,7 @@ def get_meeting(path):
 
 def get_meetings():
     """Return a list of all meetings"""
-    files = os.listdir(settings.MEETINGS_DIR)
+    files = os.listdir(os.path.abspath(settings.MEETINGS_DIR))
     return filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
 
 @app.route('/')
