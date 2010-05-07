@@ -28,7 +28,6 @@ def get_page(directory, file):
     page['content'] = Markup(markdown.markdown(text))
     page['path'] = file
     return page
-    
 
 def get_meeting(path):
     """Get a meeting from the filesystem"""
