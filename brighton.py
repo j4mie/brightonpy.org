@@ -44,14 +44,14 @@ def index():
         meeting_list=meeting_list
     )
 
-@app.route('/meetings/<date>')
+@app.route('/meetings/<date>/')
 def meeting(date):
     meeting = get_meeting(date)
     if meeting is None:
         abort(404)
     return render_template('meeting.html', meeting=meeting)
 
-@app.route('/pages/<path>')
+@app.route('/pages/<path>/')
 def page(path):
     page = get_page(settings.PAGES_DIR, path)
     if page is None:
