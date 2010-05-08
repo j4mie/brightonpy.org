@@ -15,7 +15,7 @@ def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
     path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, str(file)))
     try:
-        file_contents = open("%s/%s" % (directory, file)).read()
+        file_contents = open(path).read()
         file_contents = unicode(file_contents, 'utf-8')
     except:
         return None
