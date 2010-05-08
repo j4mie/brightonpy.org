@@ -29,7 +29,7 @@ def get_meeting(path):
     """Get a meeting from the filesystem"""
     meeting = get_page(settings.MEETINGS_DIR, path)
     if meeting is not None:
-        meeting['date'] = datetime.datetime.strptime(path, '%Y-%m-%d')
+        meeting['datetime'] = datetime.datetime.strptime(meeting['datetime'], '%Y-%m-%d %H:%M')
     return meeting
 
 def get_meetings():
