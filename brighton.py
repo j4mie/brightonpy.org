@@ -35,13 +35,18 @@ def get_meeting(path):
 def get_meetings():
     """Return a list of all meetings"""
     files = os.listdir(os.path.abspath(os.path.join(os.path.dirname(__file__), settings.MEETINGS_DIR)))
-    return filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
+    meetings = filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
+    return sorted(meetings, key=lambda item: item['datetime'])
 
 @app.route('/')
 def index():
     meeting_list = get_meetings()
+    now = datetime.datetime.now()
+    future_meetings = [meeting for meeting in meeting_list if meeting['datetime'] > now]
+    past_meetings = [meeting for meeting in meeting_list if meeting['datetime'] < now]
     return render_template('homepage.html',
-        meeting_list=meeting_list
+        future_meeting_list=future_meetings,
+        past_meeting_list=past_meetings
     )
 
 @app.route('/meetings/<date>/')

@@ -1,0 +1,15 @@
+<div class="vevent">
+    <p>
+        <abbr class="dtstart" title="{{ meeting.datetime|datetimeformat("%Y-%m-%dT%H:%M00") }}">
+            {{ meeting.datetime|datetimeformat("%A %B %d, %Y, %H:%M")}}
+        </abbr>
+         at
+         <span class="location">
+            <a href="{{ url_for("page", path="location") }}">{{ meeting.venue }}</a>
+         </span>
+    </p>
+    <p class="summary">
+        <a href="{{ url_for("meeting", date=meeting.path) }}">{{ meeting.title }}</a>
+    </p>
+    <div class="description">{{ meeting.speaker }}</div>
+</div>
