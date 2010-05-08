@@ -10,7 +10,7 @@
     {% for meeting in meeting_list %}
         <div class="vevent">
             <p>
-                <abbr class="dtstart" title="{{ meeting.date|datetimeformat("Y-m-d") }}T19:0000">{{ meeting.date|datetimeformat("%A %B %d, %Y")}}, 7pm</abbr>
+                <abbr class="dtstart" title="{{ meeting.date|datetimeformat("Y-m-d") }}T19:3000">{{ meeting.date|datetimeformat("%A %B %d, %Y")}}, 7.30pm</abbr>
                 at <span class="location"><a href="{{ url_for("page", path="location") }}">{{ meeting.venue }}</a></span>
             </p>
             <p class="summary"><a href="{{ url_for("meeting", date=meeting.path) }}">{{ meeting.title }}</a></p>
