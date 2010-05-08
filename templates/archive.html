@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Meeting Archive{% endblock %}
+
+{% block content %}
+    <h2>Past Meetings</h2>
+    {% for meeting in past_meeting_list %}
+        {% include "includes/meeting.html" %}
+    {% else %}
+        <p>No past meetings.</p>
+    {% endfor %}
+{% endblock %}

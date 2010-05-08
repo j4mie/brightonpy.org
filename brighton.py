@@ -43,11 +43,14 @@ def index():
     meeting_list = get_meetings()
     now = datetime.datetime.now()
     future_meetings = [meeting for meeting in meeting_list if meeting['datetime'] > now]
+    return render_template('homepage.html', future_meeting_list=future_meetings)
+
+@app.route('/archive/')
+def archive():
+    meeting_list = get_meetings()
+    now = datetime.datetime.now()
     past_meetings = [meeting for meeting in meeting_list if meeting['datetime'] < now]
-    return render_template('homepage.html',
-        future_meeting_list=future_meetings,
-        past_meeting_list=past_meetings
-    )
+    return render_template('archive.html', past_meeting_list=past_meetings)
 
 @app.route('/meetings/<date>/')
 def meeting(date):
