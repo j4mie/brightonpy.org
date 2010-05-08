@@ -7,9 +7,9 @@ import settings
 
 app = Flask(__name__)
 
-def format_datetime(dt, format):
-    """Format a datetime object for display"""
-    return dt.strftime(format)
+def format_datetime(datetime_object, format):
+    """Format a datetime object for display, used in Jinja2 templates"""
+    return datetime_object.strftime(format)
 
 def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
