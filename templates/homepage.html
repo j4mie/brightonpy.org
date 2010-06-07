@@ -10,7 +10,7 @@
     {% for meeting in future_meeting_list %}
         {% include "includes/meeting.html" %}
     {% else %}
-        <p>No meetings currently planned.</p>
+        <p>No meetings currently planned. <a href="{{ url_for('archive') }}">Click here for past meetings.</a></p>
     {% endfor %}
 
     <h2>Elsewhere on the web</h2>
