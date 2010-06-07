@@ -113,3 +113,10 @@ div.vevent p.summary {
 div.meeting h2 {
     margin-bottom: 0;
 }
+
+div.past_meeting {
+    background-color: #99FF99;
+    width: 440px;
+    padding: 10px;
+    margin: 10px 0;
+}
