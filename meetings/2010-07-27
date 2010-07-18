@@ -19,3 +19,8 @@ This list is incomplete, and will be expanded before the day!
 #### Jamie Matthews - the Flask web framework ####
 
 [Flask](http://flask.pocoo.org/) is a fun but powerful 'microframework' which allows you to develop small-to-medium-sized apps very quickly using a tiny amount of code. It's used to power the [BrightonPy website](http://brightonpy.org).
+
+#### Ian Ozsvald - Artificial Intelligence with Python ####
+
+Ian will demo Headroid3 with face tracking and Arduinos using pySerial and (py)OpenCV, show the tiny guts of bottle.py behind [http://ocr.aicookbook.com/](http://ocr.aicookbook.com/) and briefly return to his last pyCUDA talk with a demo of a pure Python CUDA-ised implementation of the Mandelbrot set (fast math is only a few lines of Python away - this didn't exist for the last talk).
+
