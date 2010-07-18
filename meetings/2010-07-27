@@ -16,6 +16,10 @@ It would be nice to get as many speakers as we can. The event is intended to be 
 
 This list is incomplete, and will be expanded before the day!
 
+#### Adam Collard - IPython ####
+
+[IPython](http://ipython.scipy.org/moin/) is an interactive shell for the Python programming language that offers enhanced introspection, additional shell syntax, code highlighting, tab completion, string completion, and rich history.
+
 #### Jamie Matthews - the Flask web framework ####
 
 [Flask](http://flask.pocoo.org/) is a fun but powerful 'microframework' which allows you to develop small-to-medium-sized apps very quickly using a tiny amount of code. It's used to power the [BrightonPy website](http://brightonpy.org).
