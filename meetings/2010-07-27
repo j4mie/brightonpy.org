@@ -20,6 +20,10 @@ This list is incomplete, and will be expanded before the day!
 
 [IPython](http://ipython.scipy.org/moin/) is an interactive shell for the Python programming language that offers enhanced introspection, additional shell syntax, code highlighting, tab completion, string completion, and rich history.
 
+#### Gemma Hentsch - Django ####
+
+Gemma will talk about the anatomy of a simple [Django](http://djangoproject.com) app. She'll cover the model file, the views, forms, templates and the urls file in a very light and simple way, to give a rough idea of where to start with developing more sophisticated practical Django applications.
+
 #### Jamie Matthews - the Flask web framework ####
 
 [Flask](http://flask.pocoo.org/) is a fun but powerful 'microframework' which allows you to develop small-to-medium-sized apps very quickly using a tiny amount of code. It's used to power the [BrightonPy website](http://brightonpy.org).
