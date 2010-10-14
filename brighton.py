@@ -7,9 +7,7 @@ import markdown
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 
-def format_datetime(datetime_object, format):
-    """Format a datetime object for display, used in Jinja2 templates"""
-    return datetime_object.strftime(format)
+
 
 def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
@@ -71,7 +69,10 @@ def page_not_found(error):
     return render_template('404.html'), 404
 
 # Add jinja filters
-app.jinja_env.filters['datetimeformat'] = format_datetime
+@app.template_filter('datetimeformat')
+def format_datetime(datetime_object, format):
+    """Format a datetime object for display, used in Jinja2 templates"""
+    return datetime_object.strftime(format)
 
 if __name__ == '__main__':
     app.run(debug=app.config['DEBUG'])
