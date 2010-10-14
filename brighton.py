@@ -48,7 +48,7 @@ def archive():
     meeting_list = get_meetings()
     now = datetime.datetime.now()
     past_meetings = [meeting for meeting in meeting_list if meeting['datetime'] < now]
-    return render_template('archive.html', past_meeting_list=past_meetings)
+    return render_template('archive.html', past_meeting_list=reversed(past_meetings))
 
 @app.route('/meetings/<date>/')
 def meeting(date):
