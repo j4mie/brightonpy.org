@@ -3,9 +3,9 @@ import datetime
 import os
 import yaml
 import markdown
-import settings
 
 app = Flask(__name__)
+app.config.from_pyfile('settings.py')
 
 def format_datetime(datetime_object, format):
     """Format a datetime object for display, used in Jinja2 templates"""
@@ -27,14 +27,14 @@ def get_page(directory, file):
 
 def get_meeting(path):
     """Get a meeting from the filesystem"""
-    meeting = get_page(settings.MEETINGS_DIR, path)
+    meeting = get_page(app.config['MEETINGS_DIR'], path)
     if meeting is not None:
         meeting['datetime'] = datetime.datetime.strptime(meeting['datetime'], '%Y-%m-%d %H:%M')
     return meeting
 
 def get_meetings():
     """Return a list of all meetings"""
-    files = os.listdir(os.path.abspath(os.path.join(os.path.dirname(__file__), settings.MEETINGS_DIR)))
+    files = os.listdir(os.path.abspath(os.path.join(os.path.dirname(__file__), app.config['MEETINGS_DIR'])))
     meetings = filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
     return sorted(meetings, key=lambda item: item['datetime'])
 
@@ -61,7 +61,7 @@ def meeting(date):
 
 @app.route('/pages/<path>/')
 def page(path):
-    page = get_page(settings.PAGES_DIR, path)
+    page = get_page(app.config['PAGES_DIR'], path)
     if page is None:
         abort(404)
     return render_template('page.html', page=page)
@@ -74,4 +74,4 @@ def page_not_found(error):
 app.jinja_env.filters['datetimeformat'] = format_datetime
 
 if __name__ == '__main__':
-    app.run(debug=settings.DEBUG)
+    app.run(debug=app.config['DEBUG'])
