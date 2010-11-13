@@ -7,8 +7,6 @@ import markdown
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 
-
-
 def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
     path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, str(file)))

@@ -4,6 +4,16 @@ venue: The Skiff
 datetime: 2010-10-26 19:30
 ---
 
+<div class="past_meeting">
+
+This meeting has now taken place. You can see a recording of Jim's talk, along with his slides, below:
+
+<embed src="http://blip.tv/play/AYKI80oA" type="application/x-shockwave-flash" width="425" height="267" allowscriptaccess="always" allowfullscreen="true"></embed>
+
+<div style="width:425px" id="__ss_5664646"><strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/JimPurbrick/the-why-and-how-of-automated-testing-with-python-and-django" title="The Why and How of Automated Testing with Python and Django">The Why and How of Automated Testing with Python and Django</a></strong><object id="__sse5664646" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=brightonpy2010-101104043516-phpapp01&stripped_title=the-why-and-how-of-automated-testing-with-python-and-django&userName=JimPurbrick" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed name="__sse5664646" src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=brightonpy2010-101104043516-phpapp01&stripped_title=the-why-and-how-of-automated-testing-with-python-and-django&userName=JimPurbrick" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="padding:5px 0 12px">View more <a href="http://www.slideshare.net/">presentations</a> from <a href="http://www.slideshare.net/JimPurbrick">Jim Purbrick</a>.</div></div>
+
+</div>
+
 **Please [sign up on Upcoming](http://upcoming.yahoo.com/event/7193208/) and/or [Lanyrd](http://lanyrd.com/2010/brightonpy-october/) if you will be attending.**
 
 Why do we write tests? How do we write them? What kinds of tests are valuable? Learn and share your experiences of how to do Test Driven Development in Python and Django. The evening will start with a talk by agile software veteran Jim Purbrick followed by a hands-on practical session led by Alan McNeil Jackson, CTO of [Aptivate](http://aptivate.org). **Bring a laptop if you want to code along**.
