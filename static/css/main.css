@@ -124,3 +124,19 @@ div.past_meeting, div.alert {
 div.past_meeting h4, div.alert h4 {
     border: none;
 }
+
+div.elsewhere h3 {
+    border: 0;
+}
+
+div.twtr-widget h1,
+div.twtr-widget h2,
+div.twtr-widget h3,
+div.twtr-widget h4,
+div.twtr-widget h5 {
+    border: 0;
+}
+
+div.twtr-widget {
+    margin-bottom: 20px;
+}
