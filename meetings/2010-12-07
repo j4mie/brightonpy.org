@@ -1,0 +1,11 @@
+speaker: Social event
+title: Pyuletide Python Drinks
+venue: The Florist
+datetime: 2010-12-07 19:30
+---
+
+It's the festive season, and it's time for us to relax, drink some mulled wine and chat about all things Python. Meet at [The Florist](http://hereit.is/theflorist) on Upper North Street, Brighton at 7.30pm.
+
+A few of us will be presenting "micro talks" - demos of interesting Python-related things we've found, bits of code we've been working on, or just suggested topics of conversation. Contribute if you like, or just enjoy the beer and company!
+
+    from bethlehem import *
