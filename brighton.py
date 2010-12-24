@@ -1,4 +1,5 @@
 from flask import Flask, render_template, Markup, abort
+from werkzeug import secure_filename
 import datetime
 import os
 import yaml
@@ -9,7 +10,8 @@ app.config.from_pyfile('settings.py')
 
 def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
-    path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, str(file)))
+    filename = secure_filename(file)
+    path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, filename))
     try:
         file_contents = open(path).read()
         file_contents = unicode(file_contents, 'utf-8')
