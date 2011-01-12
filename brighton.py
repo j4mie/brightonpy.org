@@ -75,4 +75,4 @@ def format_datetime(datetime_object, format):
     return datetime_object.strftime(format)
 
 if __name__ == '__main__':
-    app.run(debug='IN_PRODUCTION' not in os.environ)
+    app.run(debug=True)
