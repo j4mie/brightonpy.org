@@ -92,7 +92,7 @@ def redirect_from_epio():
     """Temporary hack to redirect requests to brightonpy.ep.io to
     brightonpy.org - should be able to remove this when ep.io can
     do this kind of thing natively."""
-    if 'ep.io' not in request.host:
+    if 'ep.io' in request.host:
         return redirect('http://brightonpy.org' + request.path, 301)
 
 if __name__ == '__main__':
