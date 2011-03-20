@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Markup, abort
+from flask import Flask, render_template, Markup, abort, redirect, url_for
 from werkzeug import secure_filename
 import datetime
 import os
@@ -36,19 +36,32 @@ def get_meetings():
     meetings = filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
     return sorted(meetings, key=lambda item: item['datetime'])
 
-@app.route('/')
-def index():
+def past_meetings():
     meeting_list = get_meetings()
     now = datetime.datetime.now()
-    future_meetings = [meeting for meeting in meeting_list if meeting['datetime'] > now]
-    return render_template('homepage.html', future_meeting_list=future_meetings)
+    return [meeting for meeting in meeting_list if meeting['datetime'] < now]
+
+def future_meetings():
+    meeting_list = get_meetings()
+    now = datetime.datetime.now()
+    return [meeting for meeting in meeting_list if meeting['datetime'] > now]
+
+@app.route('/')
+def index():
+    return render_template('homepage.html', future_meeting_list=future_meetings())
 
 @app.route('/archive/')
 def archive():
-    meeting_list = get_meetings()
-    now = datetime.datetime.now()
-    past_meetings = [meeting for meeting in meeting_list if meeting['datetime'] < now]
-    return render_template('archive.html', past_meeting_list=reversed(past_meetings))
+    """Legacy URL"""
+    return redirect(url_for('meetings'))
+
+@app.route('/meetings/')
+def meetings():
+    return render_template(
+        'meetings.html',
+        past_meeting_list=reversed(past_meetings()),
+        future_meeting_list=future_meetings()
+    )
 
 @app.route('/meetings/<date>/')
 def meeting(date):
