@@ -41,6 +41,10 @@ h4 {
     margin-bottom: 0.25em;
 }
 
+h2 {
+    margin-top: 20px;
+}
+
 ul {
     margin: 0;
 }
@@ -137,6 +141,19 @@ div.twtr-widget h5 {
     border: 0;
 }
 
-div.twtr-widget {
-    margin-bottom: 20px;
+#twitter {
+    width: 225px;
+    float: left;
+    padding-right: 5px;
+    border-right: 1px solid #DDD;
+}
+
+#googlegroup {
+    width: 220px;
+    float: left;
+    margin-left: 5px;
+}
+
+#googlegroup h4 {
+    border-bottom: 0;
 }

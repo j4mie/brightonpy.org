@@ -14,63 +14,55 @@
     {% endfor %}
 
     <div class="elsewhere" >
-    <h2>Elsewhere on the web</h2>
+        <h2>Elsewhere on the web</h2>
 
-    <h3>Follow us on <a href="http://twitter.com/brightonpy">Twitter</a></h3>
+        <div id="twitter">
+            <h3>Follow us on <a href="http://twitter.com/brightonpy">Twitter</a></h3>
 
-    <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-    <script>
-    new TWTR.Widget({
-      version: 2,
-      type: 'profile',
-      rpp: 3,
-      interval: 6000,
-      width: 250,
-      height: 300,
-      theme: {
-        shell: {
-          background: '#6dc34b',
-          color: '#000000'
-        },
-        tweets: {
-          background: '#c4f4b7',
-          color: '#000000',
-          links: '#226903'
-        }
-      },
-      features: {
-        scrollbar: false,
-        loop: false,
-        live: false,
-        hashtags: true,
-        timestamp: true,
-        avatars: false,
-        behavior: 'all'
-      }
-    }).render().setUser('brightonpy').start();
-    </script>
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+            new TWTR.Widget({
+              version: 2,
+              type: 'profile',
+              rpp: 3,
+              interval: 6000,
+              width: 225,
+              height: 300,
+              theme: {
+                shell: {
+                  background: '#6dc34b',
+                  color: '#000000'
+                },
+                tweets: {
+                  background: '#c4f4b7',
+                  color: '#000000',
+                  links: '#226903'
+                }
+              },
+              features: {
+                scrollbar: false,
+                loop: false,
+                live: false,
+                hashtags: true,
+                timestamp: true,
+                avatars: false,
+                behavior: 'all'
+              }
+            }).render().setUser('brightonpy').start();
+            </script>
+        </div>
 
-    <h3>Join our Google Group</h3>
 
-    <table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
-      <tr><td>
-      <img src="http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif"
-             height=30 width=140 alt="Google Groups">
-      </td></tr>
-      <tr><td style="padding-left: 5px">
-      <b>Subscribe to Brighton and Hove Python User Group</b>
-      </td></tr>
-      <form action="http://groups.google.com/group/brightonpy/boxsubscribe">
-      <tr><td style="padding-left: 5px;">
-      Email: <input type=text name=email>
-      <input type=submit name="sub" value="Subscribe">
-      </td></tr>
-    </form>
-    <tr><td align=right>
-      <a href="http://groups.google.com/group/brightonpy">Visit this group</a>
-    </td></tr>
-    </table>
-
+        <div id="googlegroup">
+            <h3>Join our Google Group</h3>
+            <img src="http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif" height=30 width=140 alt="Google Groups">
+            <h4>Subscribe to Brighton and Hove Python User Group</h4>
+            <form action="http://groups.google.com/group/brightonpy/boxsubscribe">
+                <p><label for="google_email">Email: </label><input id="google_email" type=text name=email /></p>
+                <p><input type=submit name="sub" value="Subscribe" /></p>
+            </form>
+            <p><a href="http://groups.google.com/group/brightonpy">Visit this group</a></p>
+        </div>
     </div>
 
 {% endblock %}
