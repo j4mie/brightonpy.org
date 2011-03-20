@@ -1,4 +1,4 @@
-from flask import Flask, render_template, Markup, abort, redirect, url_for
+from flask import Flask, render_template, Markup, abort, redirect, url_for, request
 from werkzeug import secure_filename
 import datetime
 import os
@@ -86,6 +86,14 @@ def page_not_found(error):
 def format_datetime(datetime_object, format):
     """Format a datetime object for display, used in Jinja2 templates"""
     return datetime_object.strftime(format)
+
+@app.before_request
+def redirect_from_epio():
+    """Temporary hack to redirect requests to brightonpy.ep.io to
+    brightonpy.org - should be able to remove this when ep.io can
+    do this kind of thing natively."""
+    if 'ep.io' in request.host:
+        return redirect('http://brightonpy.org' + request.path)
 
 if __name__ == '__main__':
     app.run(debug=True)
