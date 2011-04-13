@@ -129,6 +129,10 @@ div.past_meeting h4, div.alert h4 {
     border: none;
 }
 
+div.past_meeting p:last-child {
+    margin-bottom: 0;
+}
+
 div.elsewhere h3 {
     border: 0;
 }
