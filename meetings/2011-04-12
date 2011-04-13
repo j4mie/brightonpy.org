@@ -4,6 +4,12 @@ venue: The Skiff
 datetime: 2011-04-12 19:30
 ---
 
+<div class="past_meeting">
+
+This meeting has now taken place. [The slides are available online](http://j4mie.github.com/python-and-django-for-php-refugees/).
+
+</div>
+
 **Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-python-and-django-for-php-refugees/) if you will be attending.**
 
 PHP is considered by many to be the de facto language of the web. But why do people keep talking about Django? This talk will explore some of the basic differences between PHP and Python, compare how they work on the web, and explain why you might choose one set of technologies over the other. It will also give a rough introduction to Django aimed at PHP developers particularly, but accessible to a general audience.
