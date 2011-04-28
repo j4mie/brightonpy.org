@@ -1,0 +1,22 @@
+speaker: Tom Christie
+title: Web APIs, REST and Django
+venue: The Skiff
+datetime: 2011-05-10 19:00
+---
+
+**Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-web-apis-rest-django/) if you will be attending.**
+
+This talk will cover some of the basics of the REST architectural style - what it is and what its benefits are.
+It'll also cover some of the thornier aspects of implementing RESTful Web APIs, touch on some areas that are still often misunderstood, and will finish by taking a look at building RESTful APIs with Django.
+
+* Why REST?
+* Caching - What we're (still) doing wrong.
+* Content Negotiation - One resource, many representations.
+* Why we ought to be building Web browse-able APIs - A call to arms.
+* Web APIs & Django - What tools are and aren't in the box?
+* Introduction to Django REST framework.
+* The take home - Where do we go from here?
+
+#### About Tom Christie ####
+
+[Tom Christie](http://tomchristie.com/) is the author of [Django REST framework](http://django-rest-framework.org/).
