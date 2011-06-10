@@ -89,6 +89,16 @@ div#menu ul li a:hover {
     text-shadow: 0 1px 1px #AAA;
 }
 
+div#menu li.meetings a {
+    display: block;
+    float: left;
+}
+
+div#menu li.meetings a.feed {
+    margin-left: 5px;
+    margin-top: 1px;
+}
+
 div#footer {
     width: 700px;
     margin: 0 auto;

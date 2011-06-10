@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/typography.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+    <link href="{{ url_for('feed') }}" rel="alternate" title="BrightonPy Events" type="application/atom+xml">
 </head>
 <body>
     <div id="wrapper">
@@ -18,7 +19,12 @@
             <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
                 <li><a href="{{ url_for('page', path='location') }}">Location</a></li>
-                <li><a href="{{ url_for('meetings') }}">Meetings</a></li>
+                <li class="meetings">
+                    <a href="{{ url_for('meetings') }}">Meetings</a>
+                    <a class="feed" href="{{ url_for('feed') }}" title="BrightonPy Events Atom Feed">
+                        <img src="{{ url_for('static', filename='images/atom.png') }}" alt="BrightonPy Events Atom Feed" />
+                    </a>
+                </li>
             </ul>
         </div>
 

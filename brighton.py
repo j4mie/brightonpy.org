@@ -2,7 +2,10 @@ import os
 import yaml
 import datetime
 import markdown
+from urlparse import urljoin
+from datetime import timedelta
 from werkzeug import secure_filename
+from werkzeug.contrib.atom import AtomFeed
 from flask import Flask, render_template, Markup, abort, redirect, url_for, request
 
 app = Flask(__name__)
@@ -76,6 +79,22 @@ def page(path):
     if page is None:
         abort(404)
     return render_template('page.html', page=page)
+
+@app.route('/meetings.atom')
+def feed():
+    feed = AtomFeed('BrightonPy Events', feed_url=request.url, url=request.url_root)
+    for meeting in reversed(get_meetings()):
+        # A little hack
+        date = meeting['datetime'] - timedelta(weeks=1)
+        feed.add(
+            meeting['title'],
+            unicode(meeting['content']),
+            author=meeting['speaker'],
+            url=urljoin(request.url_root, url_for('meeting', date=meeting['path'])),
+            updated=date,
+            published=date
+        )
+    return feed.get_response()
 
 @app.errorhandler(404)
 def page_not_found(error):
