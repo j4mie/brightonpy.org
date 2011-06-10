@@ -1,9 +1,9 @@
-from flask import Flask, render_template, Markup, abort, redirect, url_for, request
-from werkzeug import secure_filename
-import datetime
 import os
 import yaml
+import datetime
 import markdown
+from werkzeug import secure_filename
+from flask import Flask, render_template, Markup, abort, redirect, url_for, request
 
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
