@@ -11,3 +11,17 @@ It's time for another Python Show and Tell. An opportunity to learn and share kn
 We'll also be discussing plans for a BrightonPy Hack Day sometime over the summer, so if you have any ideas for things to work on, come along to chat.
 
 **If you'd like to speak, please [drop me a quick email](mailto:jamie.matthews@gmail.com) with your name and a very brief description of your topic**
+
+### Talks confirmed so far ###
+
+#### John Montgomery - Mini Sparql ####
+
+John will be talking about his latest project, [Mini Sparql](http://www.psychicorigami.com/2011/06/05/a-little-sparql/), an in-memory triple store. The implementation includes PyParsing for parsing SPARQL queries, lots of generator functions for lazy evaluation, has an interactive prompt, and can load triple data from files/stdin.
+
+#### Ollie Glass - Akin.to ####
+
+A new approach to music discovey, Akin.to reveals surprising, beautiful and quirky connections by comparing language used in music reviews. It uses natural language parsing libraries, [SQLAlchemy](http://www.sqlalchemy.org/) and the [Flask microframework](http://flask.pocoo.org/).
+
+#### Jamie Matthews - Integrating Django with legacy systems ####
+
+Jamie will talk about his experience in building an unusual Django application which uses an HTTP API and a remote Microsoft SQL Server database (rather than Django's model layer) to supply most of its data.
