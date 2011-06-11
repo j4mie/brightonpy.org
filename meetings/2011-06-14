@@ -16,11 +16,11 @@ We'll also be discussing plans for a BrightonPy Hack Day sometime over the summe
 
 #### John Montgomery - Mini Sparql ####
 
-John will be talking about his latest project, [Mini Sparql](http://www.psychicorigami.com/2011/06/05/a-little-sparql/), an in-memory triple store. The implementation includes PyParsing for parsing SPARQL queries, lots of generator functions for lazy evaluation, has an interactive prompt, and can load triple data from files/stdin.
+John will be talking about his latest project, [Mini Sparql](http://www.psychicorigami.com/2011/06/05/a-little-sparql/), an in-memory triple store. The implementation includes [PyParsing](http://pyparsing.wikispaces.com/) for parsing [SPARQL](http://en.wikipedia.org/wiki/Sparql) queries, lots of [generator functions](http://wiki.python.org/moin/Generators) for lazy evaluation, has an interactive prompt, and can load triple data from files/stdin.
 
 #### Ollie Glass - Akin.to ####
 
-A new approach to music discovey, Akin.to reveals surprising, beautiful and quirky connections by comparing language used in music reviews. It uses natural language parsing libraries, [SQLAlchemy](http://www.sqlalchemy.org/) and the [Flask microframework](http://flask.pocoo.org/).
+A new approach to music discovey, Akin.to reveals surprising, beautiful and quirky connections by comparing language used in music reviews. It uses the [NLTK](http://www.nltk.org/) natural language library, [SQLAlchemy](http://www.sqlalchemy.org/), the [Flask microframework](http://flask.pocoo.org/), [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/) and Python's [multiprocessing](http://docs.python.org/library/multiprocessing.html) module.
 
 #### Jamie Matthews - Integrating Django with legacy systems ####
 
