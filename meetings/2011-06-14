@@ -25,3 +25,7 @@ A new approach to music discovey, Akin.to reveals surprising, beautiful and quir
 #### Jamie Matthews - Integrating Django with legacy systems ####
 
 Jamie will talk about his experience in building an unusual Django application which uses an HTTP API and a remote Microsoft SQL Server database (rather than Django's model layer) to supply most of its data.
+
+#### Tom Christie - Django Core hacking ####
+
+Tom will talk about some recent work he's been doing on Django itself.
