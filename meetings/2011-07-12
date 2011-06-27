@@ -1,0 +1,13 @@
+speaker: Ian Ozsvald
+title: Higher Performance Computing with Python
+venue: The Skiff
+datetime: 2011-07-12 19:00
+---
+
+**Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-higher-performance-computing/) if you will be attending.**
+
+This will be a 30 minute summary of Ian's EuroPython tutorial aimed at making CPU-bound tasks run faster on Python. The talk will start by looking at several profiling techniques (equally useful for web-based and I/O bound tasks too!) and then move on to C compilation (Cython, ShedSkin), multiprocessing and multi-computer processing with a quick look at CUDA-based processing and PyPy at the end. The goal will be to show you a number of techniques to make CPU-bound processes run faster on 1 or many machines.
+
+#### About Ian Ozsvald ####
+
+[Ian Ozsvald](http://twitter.com/ianozsvald) is an Artificial Intelligence researcher in industry, screencaster and author of The Screencasting Handbook, entrepreneurial geek, £5 App founder, ShowMeDoer.
