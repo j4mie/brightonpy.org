@@ -8,6 +8,6 @@ datetime: 2011-08-09 19:00
 
 [Lanyrd](http://lanyrd.com) is a moderately complex web application. The core site uses [Django](http://djangoproject.com/), [MySQL](http://www.mysql.com/) and [Amazon Web Services](http://aws.amazon.com/), but we also make use of [Solr](http://lucene.apache.org/solr/), [Redis](http://redis.io), [Varnish](https://www.varnish-cache.org/), [nginx](http://wiki.nginx.org/), [Celery](http://celeryproject.org/) and [Fabric](http://fabfile.org/). This talk will discuss the challenges involved in building large web applications using a variety of powerful open source components.
 
-#### About Ian Ozsvald ####
+#### About Simon Willison ####
 
 [Simon Willison](http://simonwillison.net) is a co-founder of [Lanyrd](http://lanyrd.com), the [Y Combinator funded](http://lanyrd.com/blog/2011/yc/) social conference directory. He has previously worked on Yahoo!'s Technology Development Team and as a software architect for The Guardian, as well as at the Lawrence Journal World, a local newspaper in Kansas, where he was [a co-creator of the Django web development framework](http://www.quora.com/What-is-the-history-of-the-Django-web-framework).
