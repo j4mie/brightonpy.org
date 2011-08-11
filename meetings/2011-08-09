@@ -4,6 +4,16 @@ venue: The Skiff
 datetime: 2011-08-09 19:00
 ---
 
+<div class="past_meeting">
+
+This meeting has now taken place. You can see a recording of Simon's talk, along with his slides, below:
+
+<embed src="http://blip.tv/play/AYLNlh0A" type="application/x-shockwave-flash" width="425" height="267" wmode="transparent" allowscriptaccess="always" allowfullscreen="true" ></embed>
+
+<div style="width:425px" id="__ss_8815580"> <strong style="display:block;margin:12px 0 4px"><a href="http://www.slideshare.net/simon/building-lanyrd" title="Building Lanyrd" target="_blank">Building Lanyrd</a></strong> <iframe src="http://www.slideshare.net/slideshow/embed_code/8815580" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> <div style="padding:5px 0 12px"> View more <a href="http://www.slideshare.net/" target="_blank">presentations</a> from <a href="http://www.slideshare.net/simon" target="_blank">Simon Willison</a> </div> </div>
+
+</div>
+
 **Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-building-lanyrd/) if you will be attending.**
 
 [Lanyrd](http://lanyrd.com) is a moderately complex web application. The core site uses [Django](http://djangoproject.com/), [MySQL](http://www.mysql.com/) and [Amazon Web Services](http://aws.amazon.com/), but we also make use of [Solr](http://lucene.apache.org/solr/), [Redis](http://redis.io), [Varnish](https://www.varnish-cache.org/), [nginx](http://wiki.nginx.org/), [Celery](http://celeryproject.org/) and [Fabric](http://fabfile.org/). This talk will discuss the challenges involved in building large web applications using a variety of powerful open source components.
