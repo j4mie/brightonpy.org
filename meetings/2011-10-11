@@ -1,0 +1,13 @@
+speaker: Andrew Godwin
+title: Eventlet, ZeroMQ, and You
+venue: The Skiff
+datetime: 2011-10-11 19:00
+---
+
+**Please [sign up on Lanyrd](http://lanyrd.com/2011/eventlet-zeromq/) if you will be attending.**
+
+A foray into two emerging technologies that have made a big difference to the way we write Python at [Epio](http://ep.io/) - [Eventlet](http://eventlet.net/), an asynchronous concurrency framework, and [ZeroMQ](http://www.zeromq.org/), a network message protocol with more features than you can shake a stick at.
+
+#### About Andrew Godwin ####
+
+[Andrew Godwin](http://www.aeracode.org/) is a long-time Python coder and a core committer on the [Django](http://djangoproject.com/) project. He is the maintainer of several open-source libraries (including [South](http://south.aeracode.org/), the leading Django migrations framework), and has been running his own servers since his early teens. Andrew is one of the two co-founders of [ep.io](http://ep.io), the managed Platform-as-a-Service Python/WSGI hosting startup.
