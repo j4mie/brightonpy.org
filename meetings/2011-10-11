@@ -4,7 +4,7 @@ venue: The Skiff
 datetime: 2011-10-11 19:00
 ---
 
-**Please [sign up on Lanyrd](http://lanyrd.com/2011/eventlet-zeromq/) if you will be attending.**
+**Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-eventlet-zeromq/) if you will be attending.**
 
 A foray into two emerging technologies that have made a big difference to the way we write Python at [Epio](http://ep.io/) - [Eventlet](http://eventlet.net/), an asynchronous concurrency framework, and [ZeroMQ](http://www.zeromq.org/), a network message protocol with more features than you can shake a stick at.
 
