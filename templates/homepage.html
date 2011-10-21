@@ -7,6 +7,9 @@
     <p><strong>Brighton and Hove Python User Group</strong> is a collection of people interested in the <a href="http://www.python.org">Python programming language</a> and related technologies in the city of <strong>Brighton and Hove</strong>, on the south coast of England.</p>
 
     <h2>Upcoming Meetings</h2>
+
+    <p>BrightonPy meetings take place on the second Tuesday of every month, usually at <a href="{{ url_for('page', path='location') }}">The Skiff</a>. Keep an eye on this site and our <a href="http://twitter.com/brightonpy">Twitter feed</a> for announcements.</p>
+
     {% for meeting in future_meeting_list %}
         {% include "includes/meeting.html" %}
     {% else %}
