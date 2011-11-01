@@ -1,0 +1,13 @@
+speaker: Geoffrey French
+title: The Larch Environment
+venue: The Skiff
+datetime: 2011-11-08 19:00
+---
+
+**Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-larch-environment/) if you will be attending.**
+
+The idea behind [The Larch Environment](https://sites.google.com/site/larchenv/) is to make programming more visual. We do this by representing objects visually, rather than as text, as seen in a normal Python console. An active document system mixes rich text with running code, and interactive objects to create live Python programs, with a fast edit-debug cycle. We also allow the use of visual content within source code, providing facilities for visually expanding the Python language, and providing LISP/Smalltalk style functionality within Python.
+
+#### About Geoffrey French ####
+
+Geoffrey is a research student at the School of Computing Sciences, University of East Anglia, Norwich, UK. His research topic is the development of a Visual interactive programming environment, which he presents in this talk. He has been using Python seriously since around 2005. He is also the author of [gSculpt](http://gsculpt.sourceforge.net), an open source 3D modelling program.
