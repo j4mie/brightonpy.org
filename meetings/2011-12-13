@@ -6,7 +6,7 @@ datetime: 2011-12-13 19:00
 
 **Please [sign up on Lanyrd](http://lanyrd.com/2011/brightonpy-strongsteam/) if you will be attending.**
 
-Ian and Kyran are taking [StrongSteam](http://strongstream.com) to Chile under the funded [Start-Up Chile](http://www.startupchile.org/) project in January. We've built the alpha of our AI powered data mining service, Ian will give demos and segue to the Industrial Revolution (with a live steam engine demo), Kyran will talk about the tech behind the shiny including Mongo, EC2, RESTful interfaces and distributed computation. We'll aim to show you how to do some cool image-processing tasks with just a few lines of Python including image recognition, optical character recognition and line and circle detection.
+Ian and Kyran are taking [StrongSteam](http://strongsteam.com) to Chile under the funded [Start-Up Chile](http://www.startupchile.org/) project in January. We've built the alpha of our AI powered data mining service, Ian will give demos and segue to the Industrial Revolution (with a live steam engine demo), Kyran will talk about the tech behind the shiny including Mongo, EC2, RESTful interfaces and distributed computation. We'll aim to show you how to do some cool image-processing tasks with just a few lines of Python including image recognition, optical character recognition and line and circle detection.
 
 #### About Ian Ozsvald ####
 
