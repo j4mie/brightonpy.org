@@ -9,3 +9,7 @@ datetime: 2012-04-10 19:00
 Django, the web framework for "perfections with deadlines", is used to power such mega-huge sites as Instagram and Disqus, is rapidly gaining popularity in the world of web development as a solid but flexible base for building modern web applications.
 
 Tonight's meeting will consist of several short-to-medium length talks from long-time Django users with hints and tips about various aspects of building high-performance, maintainable Django sites. It will also include an overview of new features in the recently released [Django 1.4](https://www.djangoproject.com/weblog/2012/mar/23/14/).
+
+### Call for speakers
+
+If you're interested in speaking at this event (on a Django-related subject), please get in touch via the mailing list.
