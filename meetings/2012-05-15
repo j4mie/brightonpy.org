@@ -1,0 +1,17 @@
+speaker: Various speakers
+title: Snakes and Lambdas
+venue: The Skiff
+datetime: 2012-05-15 19:30
+---
+
+This month we have a joint event with Functional Brighton and shall look at functional programming as it applies to Python programming!
+
+A rough idea of topics we'll cover includes:
+
+* An introduction to functional programming - what is it? how is it different? why is it interesting?
+* Functional patterns in Python - how are common functional idioms expressed in Python
+* Use cases for functional approaches in Python
+
+It should be good `fun()` !
+
+Please sign up on [Functional Brighton's Meetup Page](http://www.meetup.com/Functional-Brighton/events/63895532/) if you'll be attending.
