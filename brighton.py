@@ -108,10 +108,8 @@ def format_datetime(datetime_object, format):
 
 @app.before_request
 def redirect_from_epio():
-    """Temporary hack to redirect requests to brightonpy.ep.io to
-    brightonpy.org - should be able to remove this when ep.io can
-    do this kind of thing natively."""
-    if 'ep.io' in request.host:
+    """Redirect www to naked domain"""
+    if "www" in request.host:
         return redirect('http://brightonpy.org' + request.path, 301)
 
 if __name__ == '__main__':
