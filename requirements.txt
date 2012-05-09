@@ -1,3 +1,4 @@
-Flask==0.6
-Markdown==2.0.3
-PyYAML==3.09
+flask==0.8
+markdown==2.1.1
+pyyaml==3.10
+gunicorn==0.14.2
