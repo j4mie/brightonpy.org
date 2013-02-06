@@ -1,0 +1,17 @@
+speaker: Gemma Hentsch
+title: How to survive in a low level networking world using Python, or "What do you mean I can't use web services"?
+venue: The Skiff
+datetime: 2013-02-12 19:00
+---
+
+"I'm a web developer", thats what I keep saying. I live in a world where I'm dealing with stable, fat redundant network connections talking to well developed and documented APIs, or at least thats what I thought a couple of years back.
+
+There's a lot of hardware and a lot of software that's been developed far away from the world of the web, where inputs and outputs are limited to individual UDP and TCP packets, and not even the developers themselves know exactly how those connections behave. Not to mention web services are not the only or even the best solution for talking between various systems and applications.
+
+I'm going to be starting with and talking about low level networking in Python, and the architecture of Python daemons and devices. Taking it up a level and a layer or two, I'll also try to give a quick intro one of the better higher level approaches, looking at [Twisted](https://twistedmatrix.com/).
+
+Python isn't always the best tool for the job (okay I've found one time it isn't ideal...), but I hope to give some you new uses and ideas to work with.
+
+#### About Gemma Hentsch
+
+Gemma has been developing in Python since university, and has been professional developing with Django and other Python technologies since the `magic-removal` branch of Django. She's a freelance developer, who prefers Python, but occasionally gets tempted to the dark side with some Ruby.
