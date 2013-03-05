@@ -1,0 +1,7 @@
+speaker: Various speakers
+title: Django Group Therapy
+venue: The Skiff
+datetime: 2013-03-12 19:00
+---
+
+With the recent [release of Django 1.5](https://www.djangoproject.com/weblog/2013/feb/26/15/), we thought it was high time for a Django-themed group discussion. Come along for a chat about the new features in 1.5, to recount your successes or war stories, talk about ideas for Django apps, or just to share general advice or tips. [Andy Baker](http://www.ixxy.co.uk/) will also be leading a discussion based on [Unbreaking Your Django Application](http://www.slideshare.net/OReillyOSCON/unbreaking-your-django-application), a talk given at OSCON 2011 with some interesting tips for database performance optimisation in complex Django projects.
