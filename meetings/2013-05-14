@@ -1,0 +1,11 @@
+speaker: Mike Hansen
+title: "Cython: Building C Extensions in Python"
+venue: The Skiff
+datetime: 2013-05-14 19:00
+---
+
+In this talk, we'll go over [Cython](http://www.cython.org), a language/compiler designed to make writing Python C-extensions as easy as writing Python itself.  We'll see how we can use Cython's optional static typing to write much more efficient code than could be done in Python itself.  Additionally, we'll take a look at how Cython can be used to interface with external C / C++ libraries.  If there is time, we can also take a look at how Cython efficiently works with Numpy arrays.
+
+#### About Mike Hansen
+
+Mike has been working in Python for the past twelve years.  About 6 years ago, he got involved with [Sage](http://www.sagemath.org), an open source mathematics project written primarily in Python and is one of the biggest users of Cython.  Mike is currently a freelance web developer who works with Python/Django and a bit of frontend Javascript development.
