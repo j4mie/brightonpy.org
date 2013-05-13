@@ -1,1 +1,1 @@
-web: gunicorn brighton:app -b 0.0.0.0:$PORT -w 3
+web: chaussette brighton:app --host 0.0.0.0 --port $PORT
