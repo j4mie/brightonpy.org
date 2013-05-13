@@ -11,9 +11,17 @@ from flask import Flask, render_template, Markup, abort, redirect, url_for, requ
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 
+
+cache = {}
+
+
 def get_page(directory, file):
     """Load and parse a page from the filesystem. Returns the page, or None if not found"""
     filename = secure_filename(file)
+
+    if filename in cache:
+        return cache[filename]
+
     path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, filename))
     try:
         file_contents = open(path).read()
@@ -24,20 +32,30 @@ def get_page(directory, file):
     page = yaml.load(data)
     page['content'] = Markup(markdown.markdown(text))
     page['path'] = file
+
+    cache[filename] = page
     return page
 
 def get_meeting(path):
     """Get a meeting from the filesystem"""
     meeting = get_page(app.config['MEETINGS_DIR'], path)
     if meeting is not None:
+        meeting = meeting.copy()
         meeting['datetime'] = datetime.datetime.strptime(meeting['datetime'], '%Y-%m-%d %H:%M')
     return meeting
 
 def get_meetings():
     """Return a list of all meetings"""
+
+    if 'meeting_list' in cache:
+        return cache['meeting_list']
+
     files = os.listdir(os.path.abspath(os.path.join(os.path.dirname(__file__), app.config['MEETINGS_DIR'])))
     meetings = filter(lambda meeting: meeting is not None, [get_meeting(file) for file in files])
-    return sorted(meetings, key=lambda item: item['datetime'])
+    result = sorted(meetings, key=lambda item: item['datetime'])
+
+    cache['meeting_list'] = result
+    return result
 
 def past_meetings():
     meeting_list = get_meetings()
