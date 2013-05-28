@@ -1,1 +1,1 @@
-web: chaussette brighton:app --host 0.0.0.0 --port $PORT
+web: waitress-serve --port $PORT brighton:app
