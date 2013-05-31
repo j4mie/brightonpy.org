@@ -1,0 +1,15 @@
+speaker: Ian Ozsvald
+title: "Disambiguating brands in social media: detecting the right \"apples\" and \"oranges\" with scikit-learn"
+venue: The Skiff
+datetime: 2013-06-11 19:00
+---
+
+Existing Named Entity Recognition APIs are poorly suited to recognising brands in tweets. Ian is building an open sourced tool using scikit-learn and NLTK to classify brands better than the existing APIs. This will be an early report on his progress, discussing the linguistic difficulties faced by existing tools and showing the prototype to date.
+
+#### About Ian Ozsvald
+
+Ian is an AI researcher around NLP and ML and teaches parallel and high performance Python at PyCons. He co-ran ShowMeDo.com and the £5 Apps meetup and is recently back from honeymoon.
+
+[Ianozsvald.com](http://ianozsvald.com/)
+
+[Morconsulting.com](http://morconsulting.com/)
