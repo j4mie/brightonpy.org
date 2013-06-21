@@ -2,7 +2,7 @@ import os
 import yaml
 import datetime
 import markdown
-from urlparse import urljoin
+from urllib.parse import urljoin
 from datetime import timedelta
 from werkzeug import secure_filename
 from werkzeug.contrib.atom import AtomFeed
@@ -24,9 +24,8 @@ def get_page(directory, file):
 
     path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, filename))
     try:
-        file_contents = open(path).read()
-        file_contents = unicode(file_contents, 'utf-8')
-    except:
+        file_contents = open(path, encoding='utf-8').read()
+    except Exception as e:
         return None
     data, text = file_contents.split('---\n', 1)
     page = yaml.load(data)
@@ -106,7 +105,7 @@ def feed():
         date = meeting['datetime'] - timedelta(weeks=1)
         feed.add(
             meeting['title'],
-            unicode(meeting['content']),
+            meeting['content'],
             author=meeting['speaker'],
             url=urljoin(request.url_root, url_for('meeting', date=meeting['path'])),
             updated=date,
