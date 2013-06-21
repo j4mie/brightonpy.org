@@ -1,5 +1,6 @@
 import os
 import yaml
+import logging
 import datetime
 import markdown
 from urllib.parse import urljoin
@@ -11,6 +12,8 @@ from flask import Flask, render_template, Markup, abort, redirect, url_for, requ
 app = Flask(__name__)
 app.config.from_pyfile('settings.py')
 
+
+logger = logging.getLogger(__name__)
 
 cache = {}
 
@@ -25,7 +28,8 @@ def get_page(directory, file):
     path = os.path.abspath(os.path.join(os.path.dirname(__file__), directory, filename))
     try:
         file_contents = open(path, encoding='utf-8').read()
-    except Exception as e:
+    except:
+        logger.exception("Failed to open file at path: %s", path)
         return None
     data, text = file_contents.split('---\n', 1)
     page = yaml.load(data)
