@@ -39,6 +39,7 @@ def get_page(directory, file):
     cache[filename] = page
     return page
 
+
 def get_meeting(path):
     """Get a meeting from the filesystem"""
     meeting = get_page(app.config['MEETINGS_DIR'], path)
@@ -46,6 +47,7 @@ def get_meeting(path):
         meeting = meeting.copy()
         meeting['datetime'] = datetime.datetime.strptime(meeting['datetime'], '%Y-%m-%d %H:%M')
     return meeting
+
 
 def get_meetings():
     """Return a list of all meetings"""
@@ -60,24 +62,29 @@ def get_meetings():
     cache['meeting_list'] = result
     return result
 
+
 def past_meetings():
     meeting_list = get_meetings()
     now = datetime.datetime.now()
     return [meeting for meeting in meeting_list if meeting['datetime'] < now]
+
 
 def future_meetings():
     meeting_list = get_meetings()
     now = datetime.datetime.now()
     return [meeting for meeting in meeting_list if meeting['datetime'] > now]
 
+
 @app.route('/')
 def index():
     return render_template('homepage.html', future_meeting_list=future_meetings())
+
 
 @app.route('/archive/')
 def archive():
     """Legacy URL"""
     return redirect(url_for('meetings'))
+
 
 @app.route('/meetings/')
 def meetings():
@@ -87,6 +94,7 @@ def meetings():
         future_meeting_list=future_meetings()
     )
 
+
 @app.route('/meetings/<date>/')
 def meeting(date):
     meeting = get_meeting(date)
@@ -94,12 +102,14 @@ def meeting(date):
         abort(404)
     return render_template('meeting.html', meeting=meeting)
 
+
 @app.route('/pages/<path>/')
 def page(path):
     page = get_page(app.config['PAGES_DIR'], path)
     if page is None:
         abort(404)
     return render_template('page.html', page=page)
+
 
 @app.route('/meetings.atom')
 def feed():
@@ -117,9 +127,11 @@ def feed():
         )
     return feed.get_response()
 
+
 @app.errorhandler(404)
 def page_not_found(error):
     return render_template('404.html'), 404
+
 
 # Add jinja filters
 @app.template_filter('datetimeformat')
@@ -127,11 +139,13 @@ def format_datetime(datetime_object, format):
     """Format a datetime object for display, used in Jinja2 templates"""
     return datetime_object.strftime(format)
 
+
 @app.before_request
 def redirect_from_epio():
     """Redirect www to naked domain"""
     if "www" in request.host:
         return redirect('http://brightonpy.org' + request.path, 301)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
