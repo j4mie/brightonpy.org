@@ -1,0 +1,17 @@
+speaker: Federico Campoli
+title: A couple of things to know about PostgreSQL (before you start coding) 
+venue: The Skiff
+datetime: 2013-07-09 19:00
+---
+
+A semi serious talk about PostgreSQL, its points of strength and its weaknesses.
+ 
+PostgreSQL is a wild beast and a wrong approach can become a slow descent into hell. We'll talk about common mistakes, confusing jargon, the online manual's lost pages (well hidden in the source code) and best practices to avoid headaches for your DBA.
+
+#### About Federico Campoli
+
+Federico is a Database Administrator working for Brandwatch with seven years of PostgreSQL administration experience (versions 7.4 to 9.2), including knowledge of hot and warm standby databases, point in time recovery, streaming replication, performance tuning and Slony. 
+
+[Twitter](https://twitter.com/4thdoctor_scarf)
+
+[pgdba.co.uk](http://www.pgdba.co.uk/)
