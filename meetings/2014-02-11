@@ -1,0 +1,11 @@
+speaker: Peter Passaro
+title: "DataViz Showdown: a comparison of different data visualisation libraries"
+venue: The Skiff
+datetime: 2014-02-11 19:00
+---
+
+There are now a wide variety of data visualisation libraries available for use to make your data beautiful. I'll do a review of the different options available, focusing on 3 that are specifically Python based (Matplotlib, Seaborn, and Bokeh) and one javascript library that is the reigning champion of dataviz for the web (d3.js). I'll highlight how each of them works, when they might be appropriate, and generally how to use them effectively.
+
+#### About Peter Passaro
+
+I'm a scientist, software engineer, and can do beautiful things with lots of data. I enjoy bringing clarity of understanding to complex and messy systems. My tools of choice are artificial intelligence, linguistic processing, time series analysis, and data visualization.
