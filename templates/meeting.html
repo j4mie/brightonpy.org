@@ -7,8 +7,7 @@
         <h2>{{ meeting.title }}</h2>
         <p>
             <strong>{{ meeting.speaker }}</strong>,
-            {{ meeting.datetime|datetimeformat("%A %B %d, %Y, %H:%M")}} at
-            <a href="{{ url_for("page", path="location") }}">{{ meeting.venue }}</a>
+            {{ meeting.datetime|datetimeformat("%A %B %d, %Y, %H:%M")}} at {{ meeting.venue }}
         </p>
         {{ meeting.content }}
     </div>
