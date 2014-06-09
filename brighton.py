@@ -140,13 +140,6 @@ def format_datetime(datetime_object, format):
     return datetime_object.strftime(format)
 
 
-@app.before_request
-def redirect_from_epio():
-    """Redirect www to naked domain"""
-    if "www" in request.host:
-        return redirect('http://brightonpy.org' + request.path, 301)
-
-
 if __name__ == '__main__':
     port = int(os.getenv('PORT', 5000))
     app.run(debug=True, host='0.0.0.0', port=port)
