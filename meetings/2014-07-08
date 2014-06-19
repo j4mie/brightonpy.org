@@ -1,0 +1,11 @@
+speaker: Malcolm Box
+title: "Scaling Django on AWS for big TV shows"
+venue: The Skiff
+datetime: 2014-07-08 19:00
+---
+
+Find out how [Tellybug](http://tellybug.com/) scale their Django based stack to handle tens of thousands of requests a second during prime time TV shows such as X Factor and Britain's Got Talent. We'll look at caching, NoSQL, load testing and some of the fun when things go wrong.
+
+#### About Malcolm Box
+
+Malcolm is CTO and co-founder at Tellybug, who make awesome apps for TV shows. He's been building high-scaling APIs using Django since 2009, and has the scars to prove it. Malcolm previously worked at Symbian and Nokia so has been doing this mobile thing for over 15 years. For beer, he'll tell you about the first real touchscreen smartphone - and it wasn't an iPhone.
