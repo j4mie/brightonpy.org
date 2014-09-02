@@ -1,0 +1,15 @@
+speaker: Hireable
+title: "\"It's fairly simple. Basically Django Admin with a few customizations.\""
+venue: The Skiff
+datetime: 2014-10-14 19:00
+---
+
+Towards the end of last year James used that immortal phrase to convince me to help him develop a Django-based commercial product. The phrase 'MVP' was also bandied around without a hint of irony.
+
+9 months and 4000 commits later we've managed to get our product to beta - largely through the power of late nights and having no social life of which to speak. It's still got a fair bit of Django Admin in there (although you wouldn't know it at first glance). It's also got a ton of Angular, a smattering of React and just enough jQuery to make an old-timer feel at home. 
+
+Come along and hear our horror stories and gaze in wonderment at our technical debt...
+
+#### About Hireable
+
+Andy Baker and Vanessa Parr are Ixxy Ltd. James Cleveland and James Harvey are Links Creative. Together they are Hireable, an overly ambitious and underfunded SaaS startup from Brighton.
