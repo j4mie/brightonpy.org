@@ -1,0 +1,12 @@
+speaker: Tom Christie
+title: Realtime Hypermedia APIs in Python
+venue: DabApps
+datetime: 2016-02-09 19:30
+---
+
+A practical look at how we can combine the best of REST, Hypermedia, and Realtime. We'll demonstrate how we can build self-describing APIs, how we can use generic client libraries to communicate with these interfaces, and how we can extend this to building interactive realtime services.
+
+#### About Tom Christie
+
+Tom is Pythonista and Django hacker, whose current role is as a senior engineer at the Brighton-based web development shop, DabApps.
+His open source contributions include Django REST framework, a toolkit for building Web APIs.
