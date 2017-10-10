@@ -1,4 +1,4 @@
-flask==0.10.1
-markdown==2.3.1
-pyyaml==3.10
-waitress==0.8.5
+Flask==0.12.2
+Markdown==2.6.8
+PyYAML==3.12
+waitress==1.0.2
