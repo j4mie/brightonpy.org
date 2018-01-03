@@ -1,0 +1,12 @@
+speaker: James Heywood
+title: "Get your DB under source control for the love of all that is holy!"
+venue: DabApps
+datetime: 2018-01-11 18:00
+---
+
+Happy new Year everyone! And what better way to start 2018 with a talk from [Airfinity's](https://www.airfinity.com) Lead Engineer, James Heywood ([@jdheywood](https://twitter.com/jdheywood)).
+
+James will be talking about the use of ORMs and Databases as Code with examples of ORM usage, generating and using migrations 
+and what do you when your dev team runs wild and forks the migration path.
+
+Looking forward to seeing you all here & get your questions ready
